@@ -1,0 +1,105 @@
+{
+    "Title": "Escape the Aliens",
+    "Credits": "By Angelo F.",
+    "InitialLocation": "Lab",
+    "Locations": {
+        "Lab": {
+            "Body": "You wake on a table of a foreign spacecraft. It seems you have been abucted. Reach the end of the spacecraft to use an escape pod.",
+            "Choices": [
+                {
+                    "Text": "Forward",
+                    "Target": "Hallway A"
+                }
+            ]
+        },
+        "Hallway A": {
+            "Body": "A straight hallway. More of the hallway ahead and a door on your left and right.",
+            "Choices": [
+                {
+                    "Text": "Straight",
+                    "Target": "Hallway B"
+                },
+                {
+                    "Text": "Right",
+                    "Target": "Cafeteria"
+                },
+                {
+                    "Text": "Left",
+                    "Target": "Library"
+                }
+            ]
+        },
+        "Hallway B": {
+            "Body": "End of the hallway. Door in front, left and right. The spacecraft seems very empty...",
+            "Choices": [
+                {
+                    "Text": "Straight",
+                    "Target": "Escape Pods"
+                },
+                {
+                    "Text": "Right",
+                    "Target": "Dormitory"
+                },
+                {
+                    "Text": "Left",
+                    "Target": "Light Room"
+                },
+                {
+                    "Text": "Back",
+                    "Target": "Hallway A"
+                }
+            ]
+        },
+        "Cafeteria": {
+            "Body": "No one inside. Something that vaguely resembles food on the tables. Yuck.",
+            "Choices": [
+                {
+                    "Text": "Back",
+                    "Target": "Hallway A"
+                }
+            ]
+        },
+        "Library": {
+            "Body": "A room with many books of a foreign language. Interesting.",
+            "Choices": [
+                {
+                    "Text": "Back",
+                    "Target": "Hallway A"
+                }
+            ]
+        },"Dormitory": {
+            "Body": "A bunch of beds. It's too dark, but you can hear some sort of breathing. A keycard is on the table next to the door.",
+            "Choices": [
+                {
+                    "Text": "Grab Keycard",
+                    "Target": "Hallway B"
+                },
+                {
+                    "Text": "Back",
+                    "Target": "Hallway B"
+                }
+            ]
+        },
+        "Light Room": {
+            "Body": "A large tube with a button in front of it. A small alien-like creature sits inside of it.",
+            "Choices": [
+                {
+                    "Text": "Back",
+                    "Target": "Hallway B"
+                }
+            ]
+        },
+        "Escape Pods": {
+            "Body": "Three escape pods in the room. This may be your way out.",
+            "Choices": [
+                {
+                    "Text": "Back",
+                    "Target": "Hallway B"
+                }
+            ]
+        },
+        "Unlocked Door": {
+            "Body": "You set a course to Earth and relax. You are free."
+        }
+    }
+}
