@@ -27,7 +27,7 @@ class Location extends Scene {
             });
         }
 
-        // Add regular choices
+        // Checks if location has choices
         if (locationData.Choices) {
             for (let choice of locationData.Choices) {
                 this.engine.addChoice(choice.Text, choice);
@@ -42,7 +42,7 @@ class Location extends Scene {
             });
         }
 
-        // End fallback
+        // End if none of the above went through
         if (!locationData.Choices && key !== "Unlocked Door") {
             this.engine.addChoice("The end.");
         }
